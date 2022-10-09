@@ -1,6 +1,13 @@
 
-lista=[{id:"1",nombre:"Jose"},
-{id:"2",nombre:"Victor"}];
+lista=[{
+    id:"1",
+    nombre:"Jose"
+},
+{
+    id:"2",
+    nombre:"Victor"
+}];
+
 lista.forEach(element => {
     a = element.nombre.toUpperCase();
     //console.log(element.nombre);
