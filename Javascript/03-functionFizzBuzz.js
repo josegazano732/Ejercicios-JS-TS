@@ -2,6 +2,9 @@
 //De lo contrario retorna string BUZZ si el parametro es multiplo de 5.
 //En caso de que no sea multiplo de 3 y 5 retorna el parametro que se le pasa en la funcion.
 function fizzBuzz(num){
+    if (num % 3 == 0 && num % 5 == 0) {
+        return 'FIZZ-BUZZ';
+    }
     if (num % 3 == 0) {
         return "Fizz";
     }
@@ -12,4 +15,4 @@ function fizzBuzz(num){
     return num;
 }
 
-console.log(fizzBuzz(15));
+console.table(fizzBuzz(16));

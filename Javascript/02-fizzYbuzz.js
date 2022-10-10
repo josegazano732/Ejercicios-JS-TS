@@ -1,35 +1,50 @@
 
-for (let i = 1; i < 100; i++) {
+for (let i = 0; i < 20; i++) {
 
     let resultado = '';
 
+    if (i == 0) {
+        i = 0;
+    }
+
+    if(i % 3 == 0 && i % 5 == 0){
+        resultado = 'FIZZBUZZ';
+    }
+
     if(i % 3 == 0){
-        resultado += "Fizz";
+        resultado = "Fizz";
        // console.log("Fizz");
     } if(i % 5 == 0){
-        resultado += "Buzz";
+        resultado = "Buzz";
         //console.log("Buzz");
     }
 
-    console.log(resultado || i);
+    console.table(resultado || i);
 }
 
 // Mismo ejercicio pero como funcion connun parametro.
+/*
 function fizzBuzz(numero){
-    for (let i = 1; i < numero; i++) {
+    for (let i = 0; i < numero; i++) {
 
         let resultado = '';
+
+        if(i % 3 == 0 && i % 5 == 0){
+            resultado += 'FIZZBUZZ';
+           // console.log("FIZZ-BUZZ");
+        }
+    
     
         if(i % 3 == 0){
             resultado += "Fizz";
-           // console.log("Fizz");
+            //console.log("Fizz");
         } if(i % 5 == 0){
             resultado += "Buzz";
             //console.log("Buzz");
         }
     
-        console.log(resultado || i);
+        console.table(resultado || i);
     }
 }
-
-fizzBuzz(50);
+*/
+//fizzBuzz(50);
